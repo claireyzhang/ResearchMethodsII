@@ -1,0 +1,26 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{1}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}\\
+                    &\multicolumn{1}{c}{Propensity Score Model}\\
+\hline
+Ranked 2017         &                     \\
+Academic Quality    &      -0.884         \\
+                    &     (-1.13)         \\
+[1em]
+Athletic Quality    &       1.964\sym{*}  \\
+                    &      (2.44)         \\
+[1em]
+Near Big Market     &       1.615\sym{***}\\
+                    &      (3.52)         \\
+[1em]
+Constant            &      -1.378\sym{*}  \\
+                    &     (-2.14)         \\
+\hline
+Observations        &         100         \\
+\hline\hline
+\multicolumn{2}{l}{\footnotesize \textit{t} statistics in parentheses}\\
+\multicolumn{2}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+}
