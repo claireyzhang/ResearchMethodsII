@@ -52,7 +52,7 @@ gen block = ceil(_n/4)
 
 eststo clear
 
-eststo: reg alumnidonations2018 pred_ranked academicquality athleticquality nearbigmarket i.block
+eststo: reg alumnidonations2018 ranked2017 academicquality athleticquality nearbigmarket i.block
 
 esttab using blocked_reg.tex, mtitle("Effect of Being Ranked on Alumni Donations") label longtable replace tex
 
