@@ -3,7 +3,7 @@ version 17
 set more off
 clear all
 
-cd "/Users/clairezhang/Dropbox/Fall2023/ResearchMethodsII/HW4"
+cd "/Users/clairezhang/Dropbox/Courses/Fall2023/ResearchMethodsII/HW4"
 
 ** 1. Load the data
 
@@ -45,3 +45,12 @@ eststo clear
 eststo: ivreg2 recidivates (monthsinjail = republicanjudge) severityofcrime
 
 esttab using iv.tex, mtitle("IV") label replace tex
+
+
+** Another way that I've learned to run IV
+ivregress 2sls recidivates (monthsinjail = republicanjudge) severityofcrime
+
+// F-stat
+estat firststage
+
+
